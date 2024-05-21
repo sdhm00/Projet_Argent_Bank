@@ -1,0 +1,95 @@
+.main {
+    flex: 1;
+}
+
+.bgDark {
+    background-color: #12002b;
+}
+
+.buttonContainer {
+    background-color: #12002b;
+    min-height: 10px;
+}
+
+.header {
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.editContainer {
+    margin: 0 auto; // Centrer horizontalement
+
+    @media (min-width: 650px) {
+        width: 600px;
+    }
+
+    @media (max-width: 650px) {
+        min-width: 100%;
+    }
+}
+
+.editButton {
+    border-color: #00bc77;
+    background-color: #00bc77;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.title {
+    padding-top: 1.5rem;
+}
+
+.inputContainer {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    min-width: 200px;
+
+    input {
+        font-size: 1.2rem;
+        margin: 10px 5px;
+        padding: 5px;
+    }
+
+    @media (max-width: 650px) {
+        input {
+            min-width: 105px;
+        }
+    }
+}
+
+.buttomContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+
+    button {
+        min-width: 200px;
+    }
+
+    @media (max-width: 650px) {
+        button {
+            min-width: 100px;
+        }
+    }
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.srOnly {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
